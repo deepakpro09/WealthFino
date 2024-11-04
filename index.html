@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASK LEADS</title>
+    <style>
+        body{
+            background: url("https://blogger.googleusercontent.com/img/a/AVvXsEhbEX2ygF3Fr-xGKhhPrdB2exftSlUpf8BpWJbUUF3juyuEO-rOjwUdvppJpzu278ElmQFmDLzkfcrXa0A8OneHHeGhfMWPpv3sBVfaKnRAVXn0OJzMArFVXZCS5ta4yL4KQMt-MaMFtxEv9vb1u7jnO3PNjf9Etmu0q1GzXSgPMq3T8Ig9nPbugX3WqlBn");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            color: white;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+      .heading{
+        text-align: center;
+      }
+
+        .counter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        .container img {
+            border-radius: 50%;
+            width: 200px;
+            padding-bottom: 20px;
+        }
+
+        .btn {
+            animation-name: pulseBtn;
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            background: linear-gradient(45deg, #5149ff, #ff8a73, #ff73e1, #49ffcc);
+            background-size: 200% 200%;
+            animation: bg-animation 5s ease infinite;
+            color: white;
+            padding: 20px 50px;
+            border-radius: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+            transition: all 0.4s ease-in-out;
+            position: relative;
+            z-index: 1;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">WealthFino®️ | Krishna Pathak | SEBI REGISTERED</h1>
+        <span style="font-weight: bold; text-align: center;">Krishna Pathak #1 Trading Source 🔥</span>
+        <div class="blink back counter"><span id="countdown">59</span><span style="font-size: 15px;"
+                class="blink">SECONDS</span>
+        </div>
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEin-rtyk_FKS_7inpzdUH3VTH5_5VLDCB2gOdIJXES197OX28piQR9PXGVilbs93y9kTvbQ8HTYL2OqMobJykRJyyHRkDYHpK17NbkyXc7oxg1OduVfeAho0DvbEpBSDPYZ5OUyHh5o--u5P6ExJqDPvE0ODd9L4jNj7ShD0bv6lKJJSi-Sil3uN77Lq2DA"
+            alt="logo">
+        <a href="https://t.me/+E_alqXkP9U9lZjA1" target="_blank"><button class="btn">JOIN NOW FOR FREE</button></a>
+        <span style="margin-top: 45px; text-align: center;">Best trading analystics</span>
+        <span style="margin-bottom: 200px; text-align: center;">Join now and contact us more information 💹</span>
+    </div>
+
+
+    <script>
+        let remainingSeconds = 60;
+        function updateCountdown() {
+            document.getElementById("countdown").innerHTML = `${remainingSeconds}`;
+            remainingSeconds -= 1;
+            if (remainingSeconds < 0) {
+                remainingSeconds = 60;
+            }
+        }
+        updateCountdown();
+        const countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
+
+</body>
+
+</html>
